@@ -1,0 +1,28 @@
+What happens when you initialize a repository? Why do you need to do it?
+	
+	When you run "git init", a folder called .git is created that will contain the history of the files.
+	To delete a repository (but keep the files) delete the .git folder.
+	We need it to be able to use version control.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+	
+	Working directory is the local version you work on.
+	Staging area is where you add changes to make sure you know what to commit,
+	especially if it's spread in many different files.
+	Repository is the thing + the changes history.
+	You can chose what makes sense to commit as a logical change.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
