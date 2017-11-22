@@ -15,14 +15,35 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	
+	You can add all files that the logical change changes so that one commit
+	can encompass many different files.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+	
+	When you want to try an experimental feature, create a version of the game in new language.
+	Branches keep these logical changes on separate repositiories, thus I guess checkout works
+	for both commit ids and branches.
+	Mike also makes some good points. You can keep your production quality code on the master
+	branch and any other experimental bits on branches. When they are ready, I assume he merges
+	the branches. Mike also says that you can also work on two different features using branches.
 
 How do the diagrams help you visualize the branch structure?
 
+	So you know at what point the two diverged, and what confused me is the detached HEAD.
+	If you want to checkout a previous version and make a change, you should create a branch.
+
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	
+	We check what the differences are and then check the history. If a line was introduced in one commit,
+	it's added. If it's deleted in one, it's removed. If the same line is different in both, the user 
+	is asked to manualy merge.
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+	
+	Pros: Code is usually super long, you don't wanna go through all of it to find differences
+			and we are only human, we can't look through so much code.
+	Cons: It gets a little confusing if there is a conflict.
